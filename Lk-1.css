@@ -1,0 +1,37 @@
+body {
+	font-family: Georgia,'Times New Roman', Times, serif; /*стиль шрифта*/
+	font-size: 16px; /*размер шрифта*/
+ 	color: #000000; /*цвет текста (чёрный)*/
+ 	text-align: justify; /*выравнивание текста по (ширине)*/
+ 	text-indent: 40px; /*отступ первой строки*/
+ 	padding: 30px;
+ 	line-height: 125%;
+ 	background: #ffffff; /*цвет фона (белый)*/
+}
+
+h1 {
+	color: orange;
+	text-decoration: underline;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+p.code {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 14px;
+	color: #f6f6f0;
+	text-align: left;
+	text-indent: 0px;
+	background: #404135;
+	width: 50%;
+}
+
+#comment {
+	color: grey;
+	background-color: yellow;
+	text-indent: 0px;
+	border-style: dashed;
+
+}
