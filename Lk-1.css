@@ -36,8 +36,8 @@ p.code {
 }
 
 #container {
-	width: 200px;
-	height: 200px;
+	width: 950;
+	height: 50px;
 	background: green;
 	position: relative;
 }
