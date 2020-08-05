@@ -3,8 +3,8 @@
 		alert("hi");
 	}
 
-window.onload = function () {
-
+window.onload = function () { /*Используется для запуска кода 
+								после полной загрузки страницы*/
 /*Тестовая анимация*/
 	var t = setInterval(move,10);
 	var pos = 0;
