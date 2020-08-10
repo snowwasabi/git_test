@@ -2,31 +2,66 @@
 
 body {
 	color: black; /*Цвет текста*/
-	font-size: 30px; /*Размер шрифта*/
+	font-size: 20px; /*Размер шрифта*/
+
 }
 
 header {
 	width: 100%;
-	height: 100px;
-	padding: 1em;
-	background-color: #78B7CD;
+	padding: ;
+	background-color: black;
+	color: white;
 }
+
+header > p {
+  display: inline-block; /*Блоки в одну линию*/
+  vertical-align: top; /*Выравнивание по верху*/
+  width: 30%;
+  margin: 0 0;
+  text-align: center; /*Выравнивание текста по центру*/
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
 nav {
 	background-color: #788CCD;
 }
 
 footer {
+	width: 100%;
 	background-color: #8E78CD;
+	vertical-align:bottom;
+
 }
 
 div {
 	background-color: #78CDB9;
+	height: 600px;
 }
+
+#html {
+	padding-top: 100px;
+	background-size: 98px;
+	background-image: url("img/html.png");
+}
+
+#css {
+  padding-top: 100px;
+  background-size: 61px;
+  background-image: url("img/cssi.png");
+}
+
+#js {
+	padding-top: 100px;
+	background-size: 90px;
+  	background-image: url("img/js.png");
+}
+
 .wrapper {
 	display: grid;
 	grid-template-columns: 1fr 4fr; /*Создаёт колонки*/
 	grid-column-gap: ; /*вертикальные отступы м/д блоками*/
 	grid-row-gap: ; /*горизонтальные отступы м/д блоками*/
 	grid-gap: ; /*отступы по x y*/
-	grid-auto-rows: minmax(200px, auto);
+	/*grid-auto-rows: minmax(200px, auto);*/
 }

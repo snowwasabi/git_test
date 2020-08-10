@@ -1,22 +1,36 @@
-/*Тест кнопки*/
-	function exit() {
-		alert("hi");
+var c = document.getElementById("c");
+c.height = window.innerHeight;
+c.width = window.innerWidth;
+
+var drop_size = 12;
+var columns = c.width/drop_size;
+
+var chinese = "ムタ二コク1234567890シモラキリエスハヌトユABCDEF";
+chinese = chinese.split("");
+
+var drops = [];
+for(var i = 0; i < columns; i++)
+	drops[i] = 1; //y coordinate - same for everyone at the starting. The index contains the x coordinate
+
+	ctx = c.getContext('2d');
+
+function draw()
+{
+	ctx.fillStyle = "rgba(0, 0, 0, 0.05)";
+	ctx.fillRect(0, 0, c.width, c.height);
+	ctx.fillStyle = "#0f0";
+	ctx.font= drop_size + "px arial";
+	for(var i = 0; i < drops.length; i++)
+	{
+		text = chinese[Math.floor(Math.random()*chinese.length)];
+		ctx.fillText(text, i*drop_size, drops[i]*drop_size);
+
+		if(drops[i]*drop_size > c.height && Math.random() > 0.975)
+			drops[i] = 0;
+
+		drops[i]++;
 	}
 
-window.onload = function () { /*Используется для запуска кода 
-								после полной загрузки страницы*/
-/*Тестовая анимация*/
-	var t = setInterval(move,10);
-	var pos = 0;
-	var box = document.getElementById("box");
-
-	function move() {
-		if (pos >= 900) {
-			clearInterval(t);
-		}
-		else {
-			pos +=1;
-			box.style.left = pos+"px";
-		}
-	}
 }
+
+setInterval(draw, 33);
