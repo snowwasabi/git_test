@@ -9,6 +9,10 @@ body {
  	background: #ffffff; /*цвет фона (белый)*/
 }
 
+frame.HEADER {
+	background: #000000;
+}
+
 frame.MENU {
 	background: #000000;
 }
@@ -20,6 +24,10 @@ h1 {
 
 h2 {
 	text-decoration: underline;
+}
+
+section {
+	background-repeat: no-repeat;
 }
 
 p.code {
@@ -51,4 +59,22 @@ p.code {
 	height: 50px;
 	background: red;
 	position: absolute;
+}
+
+#html {
+	padding-top: 100px;
+	background-size: 98px;
+	background-image: url("img/html.png"); 
+}
+
+#css {
+  padding-top: 100px;
+  background-size: 61px;
+  background-image: url("img/cssi.png");
+}
+
+#js {
+	padding-top: 100px;
+	background-size: 90px;
+  	background-image: url("img/js.png");
 }
