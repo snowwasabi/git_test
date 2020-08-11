@@ -19,8 +19,8 @@ body {
 
 .center{
 	display: grid;
-	grid-template-columns: 1fr 4fr;
-	margin: 0 150px;
+	grid-template-columns: auto 1fr;
+	margin: 0 30px;
 }
 
 
@@ -28,6 +28,8 @@ body {
 .nav {
 	background-color: #788CCD;
 	padding: 40px 20px;
+	width: auto;
+
 }
 
 .content {
@@ -35,10 +37,44 @@ body {
 	padding: 40px 20px;
 }
 
+.header {
+	width: auto;
+	
 
-.header, 
+}
+
+.header,
 .footer {
 	background-color: #8E78CD;
 	padding: 20px;
 
 }
+
+.header p {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin: 0 5px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.html{
+	padding-top: 60px;
+	background-image: url(img/html.png);
+	background-size: 30%;
+}
+
+.css{
+	padding-top: 60px;
+	background-image: url(img/css.png);
+	background-size: 20%;
+}
+
+.js{
+	padding-top: 60px;
+	background-image: url(img/js.png);
+	background-size: 28%;
+}
+
